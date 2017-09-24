@@ -30,9 +30,11 @@ Guía de cómo empezar con vuejs a partir de la [charla](https://jdonsan.github.
 
         - npm run dev
 
-    - El resultado en local se muestra en http://localhost:8080/#/. Sería el mismo que https://cristinafsanz.github.io/vuejs-primeros-pasos/init-state/codenares-paradiso.
+    - El resultado en local se muestra en http://localhost:8080/#/. Sería el mismo que https://cristinafsanz.github.io/vuejs-primeros-pasos/init-state/codenares-paradiso/dist/#/.
 
-    - La demo con los componentes se puede ver en https://cristinafsanz.github.io/vuejs-primeros-pasos/demo. Para poder verlo se ha habilitado GitHub Pages en master (desde la pestaña Settings).
+    - La demo con los componentes se puede ver en https://cristinafsanz.github.io/vuejs-primeros-pasos/demo/dist/#/. Para poder verlo se ha habilitado GitHub Pages en master (desde la pestaña Settings).
+
+        - La versión de distribución se generó ejecutando: npm run build.
 
     - Arrancar demo en local:
 
