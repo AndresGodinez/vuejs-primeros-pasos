@@ -40,7 +40,9 @@ Demo original: https://jdonsan.github.io/charla-aprendiendo-vuejs/demo/dist/#/.
 
     - La demo con los componentes se puede ver en https://cristinafsanz.github.io/vuejs-primeros-pasos/demo/dist/#/. Para poder verlo se ha habilitado GitHub Pages en master (desde la pestaña Settings).
 
-        - La versión de distribución se generó ejecutando: npm run build.
+        - Se ha cambiado la ruta en config.index.js: assetsPublicPath: '/vuejs-primeros-pasos/demo/dist/'
+
+        - La versión de distribución se generó ejecutando: npm run build. 
 
     - Arrancar demo en local:
 
