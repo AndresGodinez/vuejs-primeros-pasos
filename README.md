@@ -1,6 +1,10 @@
 # Tutorial para empezar con vuejs
 
-Guía de cómo empezar con vuejs a partir de la [charla](https://jdonsan.github.io/charla-aprendiendo-vuejs/slides/#slide=1) de [Jose Dongil](https://twitter.com/jdonsan).
+Guía de cómo empezar con vuejs a partir de la [charla](https://jdonsan.github.io/charla-aprendiendo-vuejs/slides/#slide=1) de [Jose Dongil](https://twitter.com/jdonsan). 
+
+Repositorio original: https://github.com/jdonsan/charla-aprendiendo-vuejs.
+
+Demo original: https://jdonsan.github.io/charla-aprendiendo-vuejs/demo/dist/#/.
 
 - Creación de una SPA media: Con Vue y Router.
 
@@ -31,6 +35,8 @@ Guía de cómo empezar con vuejs a partir de la [charla](https://jdonsan.github.
         - npm run dev
 
     - El resultado en local se muestra en http://localhost:8080/#/. Sería el mismo que https://cristinafsanz.github.io/vuejs-primeros-pasos/init-state/codenares-paradiso/dist/#/.
+
+        - Se ha modificado .gitignore para que se pueda subir directorio /dist.
 
     - La demo con los componentes se puede ver en https://cristinafsanz.github.io/vuejs-primeros-pasos/demo/dist/#/. Para poder verlo se ha habilitado GitHub Pages en master (desde la pestaña Settings).
 
