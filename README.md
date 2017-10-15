@@ -57,5 +57,14 @@ Demo original: https://jdonsan.github.io/charla-aprendiendo-vuejs/demo/dist/#/.
     - Ejemplo Vue Dev tools:
 
     ![Vue Dev Tools en consola JavaScript mostrando los componentes](images/vue-dev-tools.jpg?raw=true)
+    
+    
+Distintas formas de publicar en GitHub Pages:
+
+- En rama master: https://github.com/cristinafsanz/vue-master.
+
+- En directorio /docs de rama master: https://github.com/cristinafsanz/vue-master-docs.
+
+- En rama gh-pages: https://github.com/cristinafsanz/vue-gh-pages.
 
 
