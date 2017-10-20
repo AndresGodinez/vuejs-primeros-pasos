@@ -67,4 +67,6 @@ Distintas formas de publicar en GitHub Pages:
 
 - En rama gh-pages: https://github.com/cristinafsanz/vue-gh-pages.
 
+- En rama gh-pages con Travis: https://github.com/cristinafsanz/vue-gh-pages-travis.
+
 
