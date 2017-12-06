@@ -58,7 +58,7 @@ Lo que le decimos a VueJS es que genere una nueva instancia que tenga como refer
 
 Los componentes que tenemos en el ejemplo son:
 
-- root (línea [41](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L41)): Tiene en data el array `games` (contiene 3 objetos con el título de los videojuegos). Contiene los componentes GameHeader, GameAdd y GameList. Recoge el evento `new` de GameAdd con el nuevo `game`. Con v-bind enlaza la propiedad interna `games` del componente GameList con el modelo `games` de Root.
+- root (línea [41](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L41)): Tiene en data el array `games` (contiene 3 objetos con el título de los videojuegos). Contiene los componentes GameHeader, GameAdd y GameList. Recoge el evento `new` de GameAdd con el nuevo `game` y lo añade al array `games`. Con v-bind enlaza la propiedad interna `games` del componente GameList con el modelo `games` de Root.
 
     - game-header (línea [37](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L37)): Sólo muestra el título de la página.
 
