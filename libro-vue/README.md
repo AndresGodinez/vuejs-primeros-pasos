@@ -20,6 +20,10 @@ Primer ejemplo:
 
 - [Demo](https://cristinafsanz.github.io/vuejs-primeros-pasos/libro-vue/capitulo1/example-vue)
 
+Cómo se ve usando la extensión de Chrome de [vue-devtools](https://github.com/vuejs/vue-devtools) después de abrir la consola de JavaScript:
+
+![Screenshot de aplicación en el navegador con extensión de Chrome a la derecha para ver los componentes](imagenes/navegador-vuedev-tools.png?raw=true)
+
 - [Código](https://github.com/cristinafsanz/vuejs-primeros-pasos/tree/master/libro-vue/capitulo1/example-vue)
 
 ```
