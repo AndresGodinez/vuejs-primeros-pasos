@@ -54,7 +54,7 @@ De esta manera, conseguimos delimitar el contexto en el que puede actuar nuestra
 
 Lo siguiente que hacemos es crear una instancia de nuestra aplicación VueJS en nuestro fichero [app.js](capitulo1/example-vue/app.js)
 
-Lo que le decimos a VueJS es que genere una nueva instancia que tenga como referencia al elemento HTML que tenga como identificador único la palabra reservada app (línea 41).
+Lo que le decimos a VueJS es que genere una nueva instancia que tenga como referencia al elemento HTML que tenga como identificador único la palabra reservada app (línea [41](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L41)).
 
 - Se añade un listener que escucha en el evento new, cada vez que el componente game-add emite un evento new, el elemento padre se encuentra escuchando y ejecuta la función addNewGame.
 
@@ -64,15 +64,15 @@ Lo siguiente que vamos a hacer es añadirle una pequeña plantilla con el HTML d
 
 Lo siguiente que vamos a ver es la definición de los tres componentes visuales en los que he dividido la interfaz:
 
-- game-header (línea 37): Se registra el componente de manera global. De esta forma ya podrá usar en las instancias de Vue. Internamente definimos un template sencillo con el título.
+- game-header (línea [37](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L37)): Se registra el componente de manera global. De esta forma ya podrá usar en las instancias de Vue. Internamente definimos un template sencillo con el título.
 
-- game-add (línea 1): El combobox encargado de incluir nuevos juegos.
+- game-add (línea [1](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L1)): El combobox encargado de incluir nuevos juegos.
 
     - El elemento tiene una directiva v-model que nos va a permitir ir obteniendo el valor del input e ir incluyéndolo en la variable titleGame.
 
     - Directiva @click que lo que nos permite es registrar una función cuando se genere el evento clic sobre el botón.
 
-- game-list (línea 23) y game-item (línea 32): Se encargan de pintar el listado de juegos.
+- game-list (línea [23](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L23)) y game-item (línea [32](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L32)): Se encargan de pintar el listado de juegos.
 
     - El componente game-list recibe un modelo como propiedad.
 
