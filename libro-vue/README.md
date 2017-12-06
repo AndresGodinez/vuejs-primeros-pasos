@@ -42,7 +42,7 @@ $ npm install vue --save
 
 ```
 
-Lo que hacemos ahora es añadir un fichero [index.html](capitulo1/example-vue/index.html) en la raíz e incluimos tanto la librería de Vue, como nuestro fichero JS, donde desarrollaremos este primer ejemplo. Hemos añadido la librería VueJS de desarrollo y no la minificada. Esto es así porque la librería de desarrollo nos lanzará un montón de advertencias y errores que nos ayudarán a aprender y trabajar con VueJS.
+Lo que hacemos ahora es añadir un fichero [index.html](capitulo1/example-vue/index.html) en la raíz e incluimos tanto la librería de Vue (por ahora versión desarrollo), como nuestro fichero JS.
 
 Se añade un elemento HTML que haga de contenedor de nuestra aplicación VueJS:
 
@@ -54,29 +54,19 @@ De esta manera, conseguimos delimitar el contexto en el que puede actuar nuestra
 
 Lo siguiente que hacemos es crear una instancia de nuestra aplicación VueJS en nuestro fichero [app.js](capitulo1/example-vue/app.js)
 
-Lo que le decimos a VueJS es que genere una nueva instancia que tenga como referencia al elemento HTML que tenga como identificador único la palabra reservada app (línea [41](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L41)).
+Lo que le decimos a VueJS es que genere una nueva instancia que tenga como referencia al elemento HTML que tenga como identificador único la palabra reservada app. 
 
-- Se añade un listener que escucha en el evento new, cada vez que el componente game-add emite un evento new, el elemento padre se encuentra escuchando y ejecuta la función addNewGame.
+Los componentes que tenemos en el ejemplo son:
 
-- La directiva v-bind lo que hace es enlazar una propiedad interna de un componente con un modelo del elemento padre, en este caso el modelo games.
+- root (línea [41](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L41)): Tiene en data el array `games` (contiene 3 objetos con el título de los videojuegos). Contiene los componentes GameHeader, GameAdd y GameList. Recoge el evento `new` de GameAdd con el nuevo `game`. Con v-bind enlaza la propiedad interna `games` del componente GameList con el modelo `games` de Root.
 
-Lo siguiente que vamos a hacer es añadirle una pequeña plantilla con el HTML de nuestra aplicación. Y añadir los elementos utilizados en templates (addNewGame y games) en data y methods.
+    - game-header (línea [37](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L37)): Sólo muestra el título de la página.
 
-Lo siguiente que vamos a ver es la definición de los tres componentes visuales en los que he dividido la interfaz:
+    - game-add (línea [1](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L1)): Tiene en data el atributo `titleGame`. Contiene un input y un button. Con v-model va rellenando el atributo con lo que se escribe en el input. Emite un evento `new` mandando el `game` al elemento padre Root cuando se pulsa el botón.
 
-- game-header (línea [37](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L37)): Se registra el componente de manera global. De esta forma ya podrá usar en las instancias de Vue. Internamente definimos un template sencillo con el título.
+    - game-list (línea [23](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L23)): Recibe en props el modelo `games` de Root. Contiene los elementos GameItem. Se pasa cada `game` mediante un for con :game="item".
 
-- game-add (línea [1](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L1)): El combobox encargado de incluir nuevos juegos.
-
-    - El elemento tiene una directiva v-model que nos va a permitir ir obteniendo el valor del input e ir incluyéndolo en la variable titleGame.
-
-    - Directiva @click que lo que nos permite es registrar una función cuando se genere el evento clic sobre el botón.
-
-- game-list (línea [23](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L23)) y game-item (línea [32](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L32)): Se encargan de pintar el listado de juegos.
-
-    - El componente game-list recibe un modelo como propiedad.
-
-    - El componente game-item recibe un modelo y lo pinta.
+        - game-item (línea [32](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L32)): Recibe en props el modelo `game` de GameList para pintar el título en la vista.
 
 ### [Capítulo 2. Trabajando con templates](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/templates.html)
 
