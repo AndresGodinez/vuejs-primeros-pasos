@@ -16,15 +16,17 @@ La librería se enmarca dentro las arquitecturas de componentes con una gestión
 
 - Sigue un flujo doble-way data-binding para la comunicación de modelos dentro de un componente aislado.
 
-Primer ejemplo: 
+#### Primer ejemplo: 
 
 - [Demo](https://cristinafsanz.github.io/vuejs-primeros-pasos/libro-vue/capitulo1/example-vue)
 
-Cómo se ve usando la extensión de Chrome de [vue-devtools](https://github.com/vuejs/vue-devtools) después de abrir la consola de JavaScript:
+- [Código](https://github.com/cristinafsanz/vuejs-primeros-pasos/tree/master/libro-vue/capitulo1/example-vue)
+
+- Cómo se ve en el navegador usando la extensión de Chrome de [vue-devtools](https://github.com/vuejs/vue-devtools) después de abrir la consola de JavaScript:
 
 ![Screenshot de aplicación en el navegador con extensión de Chrome a la derecha para ver los componentes](imagenes/navegador-vuedev-tools.png?raw=true)
 
-- [Código](https://github.com/cristinafsanz/vuejs-primeros-pasos/tree/master/libro-vue/capitulo1/example-vue)
+- Pasos:
 
 ```
 
@@ -54,6 +56,8 @@ Lo siguiente que hacemos es crear una instancia de nuestra aplicación VueJS en 
 
 Lo que le decimos a VueJS es que genere una nueva instancia que tenga como referencia al elemento HTML que tenga como identificador único la palabra reservada app (línea 41).
 
+![Código instancia vue](imagenes/new-vue.png?raw=true)
+
 - Se añade un listener que escucha en el evento new, cada vez que el componente game-add emite un evento new, el elemento padre se encuentra escuchando y ejecuta la función addNewGame.
 
 - La directiva v-bind lo que hace es enlazar una propiedad interna de un componente con un modelo del elemento padre, en este caso el modelo games.
@@ -64,17 +68,23 @@ Lo siguiente que vamos a ver es la definición de los tres componentes visuales 
 
 - game-header (línea 37): Se registra el componente de manera global. De esta forma ya podrá usar en las instancias de Vue. Internamente definimos un template sencillo con el título.
 
+![Código instancia vue](imagenes/game-header.png?raw=true)
+
 - game-add (línea 1): El combobox encargado de incluir nuevos juegos.
 
     - El elemento tiene una directiva v-model que nos va a permitir ir obteniendo el valor del input e ir incluyéndolo en la variable titleGame.
 
     - Directiva @click que lo que nos permite es registrar una función cuando se genere el evento clic sobre el botón.
 
+![Código instancia vue](imagenes/game-add.png?raw=true)
+
 - game-list (línea 23) y game-item (línea 32): Se encargan de pintar el listado de juegos.
 
     - El componente game-list recibe un modelo como propiedad.
 
     - El componente game-item recibe un modelo y lo pinta.
+
+![Código instancia vue](imagenes/game-list.png?raw=true)
 
 ### [Capítulo 2. Trabajando con templates](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/templates.html)
 
