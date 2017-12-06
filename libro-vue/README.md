@@ -6,6 +6,68 @@ Notas y ejercicios a partir del libro: [Desarrolla aplicaciones con VueJS](https
 
 ### [Capítulo 1. The Progressive JavaScript Framework](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/introduccion.html)
 
+La librería se enmarca dentro las arquitecturas de componentes con una gestión interna de modelos basada en el patrón [Model–view–viewmodel](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel). Esto quiere decir que los componentes, internamente, tienen mecanismos de doble 'data-binding' para manipular el estado de la aplicación.
+
+- Proporciona componentes visuales de forma reactiva: Piezas de UI bien encapsulados que exponen una API con propiedades de entrada y emisión de eventos.
+
+- Utiliza Virtual DOM.
+
+- Sigue un flujo one-way data-binding para la comunicación entre componentes.
+
+- Sigue un flujo doble-way data-binding para la comunicación de modelos dentro de un componente aislado.
+
+Primer ejemplo: 
+
+- [Demo](https://cristinafsanz.github.io/vuejs-primeros-pasos/libro-vue/capitulo1/example-vue)
+
+- [Código](https://github.com/cristinafsanz/vuejs-primeros-pasos/libro-vue/capitulo1/example-vue)
+
+```
+
+$ cd capitulo1
+
+$ mkdir example-vue
+
+$ cd example-vue
+
+$ npm init
+
+$ npm install vue --save
+
+```
+
+Lo que hacemos ahora es añadir un fichero [index.html](capitulo1/example-vue/index.html) en la raíz e incluimos tanto la librería de Vue, como nuestro fichero JS, donde desarrollaremos este primer ejemplo. Hemos añadido la librería VueJS de desarrollo y no la minificada. Esto es así porque la librería de desarrollo nos lanzará un montón de advertencias y errores que nos ayudarán a aprender y trabajar con VueJS.
+
+Se añade un elemento HTML que haga de contenedor de nuestra aplicación VueJS:
+
+```
+<div id="app"></div>
+```
+
+De esta manera, conseguimos delimitar el contexto en el que puede actuar nuestra aplicación.
+
+Lo siguiente que hacemos es crear una instancia de nuestra aplicación VueJS en nuestro fichero [app.js](capitulo1/example-vue/app.js)
+
+Lo que le decimos a VueJS es que genere una nueva instancia que tenga como referencia al elemento HTML que tenga como identificador único la palabra reservada app (línea 41).
+
+Lo siguiente que vamos a hacer es añadirle una pequeña plantilla con el HTML de nuestra aplicación. Y añadir los elementos utilizados en templates (addNewGame y games) en data y methods.
+
+Lo siguiente que vamos a ver es la definición de los tres componentes visuales en los que he dividido la interfaz:
+
+- game-header (línea 37): Se registra el componente de manera global. De esta forma ya podrá usar en las instancias de Vue. Internamente definimos un template sencillo con el título.
+
+- game-add (línea 1): El combobox encargado de incluir nuevos juegos.
+
+    - El elemento tiene una directiva v-model que nos va a permitir ir obteniendo el valor del input e ir incluyéndolo en la variable titleGame.
+
+    - Directiva @click que lo que nos permite es registrar una función cuando se genere el evento clic sobre el botón.
+
+- game-list (línea 23) y game-item (línea 32): Se encargan de pintar el listado de juegos.
+
+    - El componente game-list recibe un modelo como propiedad.
+
+    - El componente game-item recibe un modelo y lo pinta.
+
 ### [Capítulo 2. Trabajando con templates](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/templates.html)
 
 ### [Capítulo 3. Enlazando clases y estilos](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/estilos.html)
