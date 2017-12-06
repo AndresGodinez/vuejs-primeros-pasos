@@ -20,7 +20,7 @@ Primer ejemplo:
 
 - [Demo](https://cristinafsanz.github.io/vuejs-primeros-pasos/libro-vue/capitulo1/example-vue)
 
-- [Código](https://github.com/cristinafsanz/vuejs-primeros-pasos/libro-vue/capitulo1/example-vue)
+- [Código](https://github.com/cristinafsanz/vuejs-primeros-pasos/tree/master/libro-vue/capitulo1/example-vue)
 
 ```
 
@@ -49,6 +49,10 @@ De esta manera, conseguimos delimitar el contexto en el que puede actuar nuestra
 Lo siguiente que hacemos es crear una instancia de nuestra aplicación VueJS en nuestro fichero [app.js](capitulo1/example-vue/app.js)
 
 Lo que le decimos a VueJS es que genere una nueva instancia que tenga como referencia al elemento HTML que tenga como identificador único la palabra reservada app (línea 41).
+
+- Se añade un listener que escucha en el evento new, cada vez que el componente game-add emite un evento new, el elemento padre se encuentra escuchando y ejecuta la función addNewGame.
+
+- La directiva v-bind lo que hace es enlazar una propiedad interna de un componente con un modelo del elemento padre, en este caso el modelo games.
 
 Lo siguiente que vamos a hacer es añadirle una pequeña plantilla con el HTML de nuestra aplicación. Y añadir los elementos utilizados en templates (addNewGame y games) en data y methods.
 
