@@ -92,6 +92,12 @@ Los componentes que tenemos en el ejemplo son:
 
 ### [Capítulo 3. Enlazando clases y estilos](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/estilos.html)
 
+#### Ejemplo: 
+
+- [Demo](https://cristinafsanz.github.io/vuejs-primeros-pasos/libro-vue/capitulo3/index.html)
+
+- [Código](https://github.com/cristinafsanz/vuejs-primeros-pasos/tree/master/libro-vue/capitulo3)
+
 ## Bloque 2. La creación de componentes
 
 ### [Capítulo 4. Creando componentes](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/componentes.html)
