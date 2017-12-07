@@ -58,7 +58,7 @@ Lo que le decimos a VueJS es que genere una nueva instancia que tenga como refer
 
 Los componentes que tenemos en el ejemplo son:
 
-- root (línea [41](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L41)): Contiene los componentes GameHeader, GameAdd y GameList. Tiene en data el array `games` (contiene 3 objetos con el título de los videojuegos).  Con v-bind pasa la propiedad interna `games` al componente GameList. Recoge el evento `new` de GameAdd (@new="addNewGame") con el nuevo `game` y lo añade al array `games`.
+- root (línea [41](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L41)): Contiene los componentes GameHeader, GameAdd y GameList. Tiene en data el array `games` (contiene 3 objetos con el título de los videojuegos).  Con v-bind pasa la propiedad interna `games` al componente GameList. Registra el evento `new` de GameAdd (@new="addNewGame", versión corta de v-on:new="addNewGame") con el nuevo `game` y lo añade al array `games`.
 
     - game-header (línea [37](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L37)): Sólo muestra el título de la página.
 
@@ -69,6 +69,12 @@ Los componentes que tenemos en el ejemplo son:
         - game-item (línea [32](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L32)): Recibe en props el modelo `game` de GameList para pintar el título en la vista.
 
 ### [Capítulo 2. Trabajando con templates](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/templates.html)
+
+#### Ejemplo: 
+
+- [Demo](https://cristinafsanz.github.io/vuejs-primeros-pasos/libro-vue/capitulo2)
+
+- [Código](https://github.com/cristinafsanz/vuejs-primeros-pasos/tree/master/libro-vue/capitulo2)
 
 ### [Capítulo 3. Enlazando clases y estilos](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/estilos.html)
 
