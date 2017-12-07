@@ -76,6 +76,20 @@ Los componentes que tenemos en el ejemplo son:
 
 - [Código](https://github.com/cristinafsanz/vuejs-primeros-pasos/tree/master/libro-vue/capitulo2)
 
+- Elementos del ejemplo:
+
+    - [Interpolación con filtro](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo2/index.html#L11)
+
+    ![Screenshot con Bienvenido USUARIO al escribir usuario en el input de username](imagenes/interpolacion-filtro?raw=true)
+
+    - [Interpolación atributos](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo2/index.html#L31): El botón está deshabilitado mientras el formulario no está relleno. Se utiliza una computada para comprobarlo. 
+
+    - [Interpolación por medio de expresiones](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo2/index.html#L13)
+
+    - [Directivas con argumento](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo2/index.html#L35)
+
+    - [Directivas modificadas](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo2/index.html#L19)
+
 ### [Capítulo 3. Enlazando clases y estilos](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/estilos.html)
 
 ## Bloque 2. La creación de componentes
