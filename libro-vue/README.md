@@ -115,6 +115,10 @@ Los componentes que tenemos en el ejemplo son:
 
 - [Código](https://github.com/cristinafsanz/vuejs-primeros-pasos/tree/master/libro-vue/capitulo4)
 
+- Cómo se ve en el navegador usando la extensión de Chrome de [vue-devtools](https://github.com/vuejs/vue-devtools) después de abrir la consola de JavaScript:
+
+![Screenshot de aplicación en el navegador con extensión de Chrome a la derecha para ver los componentes](imagenes/marketplace.png?raw=true)
+
 ### [Capítulo 5. El ciclo de vida de un componente](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/ciclo.html)
 
 ### [Capítulo 6. Definiendo componentes en un único fichero](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/fichero.html)
