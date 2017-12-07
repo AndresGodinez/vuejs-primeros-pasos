@@ -111,7 +111,7 @@ Los componentes que tenemos en el ejemplo son:
 
 ### [Capítulo 4. Creando componentes](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/componentes.html)
 
-- [Demo](https://cristinafsanz.github.io/vuejs-primeros-pasos/libro-vue/capitulo4/index.html)
+- [Demo](https://cristinafsanz.github.io/vuejs-primeros-pasos/libro-vue/capitulo4)
 
 - [Código](https://github.com/cristinafsanz/vuejs-primeros-pasos/tree/master/libro-vue/capitulo4)
 
