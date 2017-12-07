@@ -72,7 +72,7 @@ Los componentes que tenemos en el ejemplo son:
 
 #### Ejemplo: 
 
-- [Demo](https://cristinafsanz.github.io/vuejs-primeros-pasos/libro-vue/capitulo2)
+- [Demo](https://cristinafsanz.github.io/vuejs-primeros-pasos/libro-vue/capitulo2/index.html)
 
 - [Código](https://github.com/cristinafsanz/vuejs-primeros-pasos/tree/master/libro-vue/capitulo2)
 
