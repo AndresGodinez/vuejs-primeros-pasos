@@ -80,7 +80,7 @@ Los componentes que tenemos en el ejemplo son:
 
     - [Interpolación con filtro](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo2/index.html#L11)
 
-    ![Screenshot con Bienvenido USUARIO al escribir usuario en el input de username](imagenes/interpolacion-filtro?raw=true)
+    ![Screenshot con Bienvenido USUARIO al escribir usuario en el input de username](imagenes/interpolacion-filtro.png?raw=true)
 
     - [Interpolación atributos](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo2/index.html#L31): El botón está deshabilitado mientras el formulario no está relleno. Se utiliza una computada para comprobarlo. 
 
