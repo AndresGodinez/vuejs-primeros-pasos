@@ -58,13 +58,13 @@ Lo que le decimos a VueJS es que genere una nueva instancia que tenga como refer
 
 Los componentes que tenemos en el ejemplo son:
 
-- root (línea [41](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L41)): Tiene en data el array `games` (contiene 3 objetos con el título de los videojuegos). Contiene los componentes GameHeader, GameAdd y GameList. Recoge el evento `new` de GameAdd con el nuevo `game` y lo añade al array `games`. Con v-bind enlaza la propiedad interna `games` del componente GameList con el modelo `games` de Root.
+- root (línea [41](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L41)): Contiene los componentes GameHeader, GameAdd y GameList. Tiene en data el array `games` (contiene 3 objetos con el título de los videojuegos).  Con v-bind pasa la propiedad interna `games` al componente GameList. Recoge el evento `new` de GameAdd (@new="addNewGame") con el nuevo `game` y lo añade al array `games`.
 
     - game-header (línea [37](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L37)): Sólo muestra el título de la página.
 
-    - game-add (línea [1](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L1)): Tiene en data el atributo `titleGame`. Contiene un input y un button. Con v-model va rellenando el atributo con lo que se escribe en el input. Emite un evento `new` mandando el `game` al elemento padre Root cuando se pulsa el botón.
+    - game-add (línea [1](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L1)): Contiene un input y un button. Con v-model va rellenando el atributo con lo que se escribe en el input. Emite un evento `new` (this.$emit('new')) mandando el `game` al elemento padre Root cuando se pulsa el botón.
 
-    - game-list (línea [23](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L23)): Recibe en props el modelo `games` de Root. Contiene los elementos GameItem. Se pasa cada `game` mediante un for con :game="item".
+    - game-list (línea [23](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L23)): Contiene los elementos GameItem. Recibe en props el modelo `games` de Root. Se pasa cada `game` mediante un for con :game="item" (es el [shorthand](https://vuejs.org/v2/guide/syntax.html#v-bind-Shorthand) de v-bind).
 
         - game-item (línea [32](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo1/example-vue/app.js#L32)): Recibe en props el modelo `game` de GameList para pintar el título en la vista.
 
