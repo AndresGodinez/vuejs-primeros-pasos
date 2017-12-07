@@ -6,6 +6,8 @@ Repositorio original: https://github.com/jdonsan/charla-aprendiendo-vuejs.
 
 Demo original: https://jdonsan.github.io/charla-aprendiendo-vuejs/demo/dist/#/.
 
+Notas libro Vue: https://github.com/cristinafsanz/vuejs-primeros-pasos/tree/master/libro-vue.
+
 - Creación de una SPA media: Con Vue y Router.
 
     - Instalar Nodejs: https://nodejs.org/es/.

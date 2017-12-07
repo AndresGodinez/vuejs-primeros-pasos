@@ -98,6 +98,15 @@ Los componentes que tenemos en el ejemplo son:
 
 - [Código](https://github.com/cristinafsanz/vuejs-primeros-pasos/tree/master/libro-vue/capitulo3)
 
+- Elementos del ejemplo:
+
+    - [Enlazar clases](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo3/index.html#L22)
+
+    ![Screenshot con consola JavaScript para ver clase añadida](imagenes/enlazar-clases.png?raw=true)
+
+    - [Enlazar arrays y objetos](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo3/index.html#L18): que contenga las clases box y winner (ésta última sólo si player1.winner es true).
+    
+
 ## Bloque 2. La creación de componentes
 
 ### [Capítulo 4. Creando componentes](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/componentes.html)
