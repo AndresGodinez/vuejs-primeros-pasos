@@ -143,7 +143,7 @@ Los componentes que tenemos en el ejemplo son:
 
 ### [Capítulo 9. Conceptos avanzados](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/router-avanzado.html)
 
-## Bloque 4. La gestión de estados con vuex]
+## Bloque 4. La gestión de estados con vuex
 
 ### [Capítulo 10. Introducción](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/vuex.html)
 
@@ -153,7 +153,7 @@ Los componentes que tenemos en el ejemplo son:
 
 ### [Capítulo 13. Los módulos](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/m%C3%B3dulos.html)
 
-## Bloque 5. El empaquetado de la aplicación con webpack]
+## Bloque 5. El empaquetado de la aplicación con webpack
 
 ### [Capítulo 14. Conceptos básicos](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/webpack-basico.html)
 
