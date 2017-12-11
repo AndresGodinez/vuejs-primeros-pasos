@@ -1,12 +1,16 @@
 # Tutorial para empezar con vuejs
 
-Guía de cómo empezar con vuejs a partir de la [charla](https://jdonsan.github.io/charla-aprendiendo-vuejs/slides/#slide=1) de [Jose Dongil](https://twitter.com/jdonsan). 
+## Notas Libro Vue
 
-Repositorio original: https://github.com/jdonsan/charla-aprendiendo-vuejs.
+- [Ejercicios: Demo, código y notas](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/README.md)
 
-Demo original: https://jdonsan.github.io/charla-aprendiendo-vuejs/demo/dist/#/.
+## Notas Charla
 
-Notas libro Vue: https://github.com/cristinafsanz/vuejs-primeros-pasos/tree/master/libro-vue.
+- Repositorio original: https://github.com/jdonsan/charla-aprendiendo-vuejs.
+
+- Demo original: https://jdonsan.github.io/charla-aprendiendo-vuejs/demo/dist/#/.
+
+### Guía de cómo empezar con vuejs a partir de la [charla](https://jdonsan.github.io/charla-aprendiendo-vuejs/slides/#slide=1) de [Jose Dongil](https://twitter.com/jdonsan). 
 
 - Creación de una SPA media: Con Vue y Router.
 
@@ -61,7 +65,7 @@ Notas libro Vue: https://github.com/cristinafsanz/vuejs-primeros-pasos/tree/mast
     ![Vue Dev Tools en consola JavaScript mostrando los componentes](images/vue-dev-tools.jpg?raw=true)
     
     
-Distintas formas de publicar en GitHub Pages:
+## Distintas formas de publicar en GitHub Pages:
 
 - En rama master: https://github.com/cristinafsanz/vue-master.
 
