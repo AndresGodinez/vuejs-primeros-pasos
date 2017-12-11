@@ -119,6 +119,18 @@ Los componentes que tenemos en el ejemplo son:
 
 ![Screenshot de aplicación en el navegador con extensión de Chrome a la derecha para ver los componentes](imagenes/marketplace.png?raw=true)
 
+- Propiedades de entrada de un componente en [app.js](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo4/app.js#L51) y en [index.html](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo4/index.html#L18)
+
+- Componente [emite evento](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo4/app.js#L45) y [se registra](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo4/index.html#L21). Se ejecutará la función addToCart cada vez que el componente emita un evento add.
+
+- [Extender el componente course con mixins](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo4/app.js#L99): Se definen dos componentes nuevos llamados course-js y course-css donde indicamos en el parámetro mixins que queremos que hereden. Y se añaden los datos que se quieren sobreescribir.
+
+- [Componentes locales](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo4/app.js#L56): course-header, course-content y course-footer.
+
+- [Componente contenedor y etiqueta slot](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo4/app.js#L111): Dentro de un componente podemos indicar todos los slot que necesitemos. Simplemente les tendremos que indicar un nombre para que VueJS sepa diferenciarlos.
+
+- [Etiqueta component](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo4/index.html#L14): es una etiqueta de VueJS en la que, en combinación con la directiva :is, podemos cargar componentes de manera dinámica.
+
 ### [Capítulo 5. El ciclo de vida de un componente](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/ciclo.html)
 
 ### [Capítulo 6. Definiendo componentes en un único fichero](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/fichero.html)

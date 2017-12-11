@@ -88,7 +88,7 @@ Vue.component('course-js', {
         return {
             styleClass: 'course-js',
             header: {
-                title: 'Curse JS',
+                title: 'Curso JS',
                 image: 'http://lorempixel.com/64/64/'
             }
         }
