@@ -133,7 +133,62 @@ Los componentes que tenemos en el ejemplo son:
 
 ### [Capítulo 5. El ciclo de vida de un componente](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/ciclo.html)
 
+- Existen 4 estados posibles. El framework nos va a permitir incluir acciones antes y después de que un componente se encuentre en un estado determinado.
+
+    - Creando el componente
+
+        - beforeCreate
+
+        - created
+
+    - Montando el componente
+
+        - beforeMount
+
+        - mounted
+
+    - Actualizando el componente
+
+        - beforeUpdate
+
+        - updated
+
+    - Destruyendo el componente
+
+        - beforeDestroy
+
+        - destroyed
+
 ### [Capítulo 6. Definiendo componentes en un único fichero](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/fichero.html)
+
+- Creando un proyecto con vue-cli: empezar un proyecto VueJS a partir de las plantillas establecidas por la comunidad como estándar
+
+```
+$ cd capitulo6
+
+$ npm install -g vue-cli
+
+$ vue init webpack my-new-app
+
+```
+
+- Arrancarlo en local
+
+```
+
+$ cd my-new-app
+
+$ npm install
+
+$ npm run dev
+
+```
+
+- Generando versión de distribución para verlo con GitHub Pages
+
+- [Demo](https://cristinafsanz.github.io/vuejs-primeros-pasos/libro-vue/capitulo6/my-new-app/dist)
+
+- [Código](https://github.com/cristinafsanz/vuejs-primeros-pasos/tree/master/libro-vue/capitulo6/my-new-app)
 
 ## Bloque 3. La gestión de rutas con vue-router
 
