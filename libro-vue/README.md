@@ -172,7 +172,7 @@ $ vue init webpack my-new-app
 
 ```
 
-- Arrancarlo en local
+- Arrancarlo para verlo en local en localhost:8080
 
 ```
 
@@ -184,9 +184,15 @@ $ npm run dev
 
 ```
 
-- Generando versión de distribución para verlo con GitHub Pages
+- Generando versión de distribución para verlo con GitHub Pages (cambiando en config/index.js assetsPublicPath: '')
 
-- [Demo](https://cristinafsanz.github.io/vuejs-primeros-pasos/libro-vue/capitulo6/my-new-app/dist)
+```
+
+$ npm run build
+
+```
+
+- [Demo](https://cristinafsanz.github.io/vuejs-primeros-pasos/libro-vue/capitulo6/my-new-app/dist/#/)
 
 - [Código](https://github.com/cristinafsanz/vuejs-primeros-pasos/tree/master/libro-vue/capitulo6/my-new-app)
 
