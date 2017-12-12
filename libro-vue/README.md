@@ -184,7 +184,7 @@ $ npm run dev
 
 ```
 
-- Generando versión de distribución para verlo con GitHub Pages (cambiando en config/index.js assetsPublicPath: '')
+- Generando versión de distribución para verlo con GitHub Pages (cambiando en config/index.js assetsPublicPath: '' y subiendo el directorio dist con 'git add dist --force')
 
 ```
 
