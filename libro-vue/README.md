@@ -200,6 +200,10 @@ $ npm run build
 
 ### [Capítulo 7. Introduciendo rutas en nuestra aplicación](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/rutas.html)
 
+- En el capítulo anterior se inicializó el proyecto incluyendo vue-router, por lo que se tiene creado el fichero [router/index.js](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo6/my-new-app/src/router/index.js). Se importa tanto la librería de vue como la de vue-router. Lo siguiente es extender VueJS por medio de Vue.use(Router).
+
+- En la [demo](https://cristinafsanz.github.io/vuejs-primeros-pasos/demo/dist/#/about) de la charla se enruta a "About". El código se puede ver en [router/index.js](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/demo/src/router/index.js). Se navega a las rutas en [menu.vue](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/demo/src/components/menu.vue#L7).
+
 ### [Capítulo 8. Interceptores de navegación](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/interceptores.html)
 
 ### [Capítulo 9. Conceptos avanzados](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/router-avanzado.html)
