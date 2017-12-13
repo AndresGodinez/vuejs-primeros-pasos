@@ -206,7 +206,37 @@ $ npm run build
 
 ### [Capítulo 8. Interceptores de navegación](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/interceptores.html)
 
+- Interceptores globales
+
+    - beforeEach: Registrar un interceptor que se ejecutará cada vez que se realice un cambio de ruta.
+
+    - afterEach: Este interceptor se ejecuta después de que todos los interceptores de los componentes se hayan ejecutado.
+
+- Interceptores locales a una ruta
+
+- Interceptores locales a un componente
+
+    - beforeRouteEnter
+
+    - beforeRouteUpdate
+
+    - beforeRouteLeave
+
 ### [Capítulo 9. Conceptos avanzados](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/router-avanzado.html)
+
+- Anidar rutas: Incluir un nuevo parámetro en la ruta llamado children.
+
+- Pasar propiedades a un ComponentView.
+
+- Incluir meta-información de una ruta.
+
+- Poner nuestro sistema de rutas en modo History de HTML5: 
+
+    - Un SPA suele contar con un sistema de rutas precedido por una almohadilla. De esta forma, el navegador sabe que no tiene que resolver la ruta contra un servidor, ni hace una recarga de la página, sino que intenta solucionar la ruta a nivel interno de navegador.
+
+    - Gracias a nuestra librería de rutas vue-router se puede configurar para que se comporte de forma nativa a como lo hace el navegador (con mode: 'history'). Lo malo de esto es que ahora todas las rutas harán una petición a nuestro servidor de aplicaciones.
+
+- Cambiar el comportamiento del scroll.
 
 ## Bloque 4. La gestión de estados con vuex
 
