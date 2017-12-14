@@ -129,6 +129,8 @@ Los componentes que tenemos en el ejemplo son:
 
 - [Componente contenedor y etiqueta slot](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo4/app.js#L111): Dentro de un componente podemos indicar todos los slot que necesitemos. Simplemente les tendremos que indicar un nombre para que VueJS sepa diferenciarlos.
 
+    - [Explicación slots](https://alligator.io/vuejs/component-slots/).
+
 - [Etiqueta component](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/capitulo4/index.html#L14): es una etiqueta de VueJS en la que, en combinación con la directiva :is, podemos cargar componentes de manera dinámica.
 
 ### [Capítulo 5. El ciclo de vida de un componente](https://jdonsan.gitbooks.io/desarrolla-aplicaciones-con-vuejs/content/ciclo.html)
