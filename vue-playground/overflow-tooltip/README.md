@@ -22,3 +22,7 @@ git add --force node_modules/v-tooltip/dist/v-tooltip.min.js
 ## Demo
 
 https://cristinafsanz.github.io/vuejs-primeros-pasos/vue-playground/overflow-tooltip/index.html
+
+## Código
+
+https://github.com/cristinafsanz/vuejs-primeros-pasos/tree/master/vue-playground/overflow-tooltip
