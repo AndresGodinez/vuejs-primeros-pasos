@@ -11,13 +11,7 @@ npm install v-tooltip --save
 
 ## Gitignore
 
-En .gitignore añadir node_modules pero subir node_modules/vue/dist/vue.js y node_modules/v-tooltip/dist/v-tooltip.min.js (los ficheros que se utilizan para añadir Vue y VTooltip al proyecto).
-
-```
-git add --force node_modules/vue/dist/vue.js
-
-git add --force node_modules/v-tooltip/dist/v-tooltip.min.js
-```
+En .gitignore añadido node_modules pero copiados node_modules/vue/dist/vue.js y node_modules/v-tooltip/dist/v-tooltip.min.js a una carpeta vendor (los ficheros que se utilizan para añadir Vue y VTooltip al proyecto).
 
 ## Demo
 
