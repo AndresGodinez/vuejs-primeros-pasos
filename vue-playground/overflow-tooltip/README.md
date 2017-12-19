@@ -20,3 +20,7 @@ https://cristinafsanz.github.io/vuejs-primeros-pasos/vue-playground/overflow-too
 ## Código
 
 https://github.com/cristinafsanz/vuejs-primeros-pasos/tree/master/vue-playground/overflow-tooltip
+
+## Pruebas Codepen tooltip css (Pruebas 1 y 2)
+
+https://codepen.io/collection/AapaOR/
