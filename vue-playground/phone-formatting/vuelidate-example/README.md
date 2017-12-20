@@ -35,7 +35,11 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 ## GitHub Pages
 
-Change config/index.js: assetsPublicPath: ''
+Note: Repo with GitHub Pages enabled in master
+
+- Change config/index.js: assetsPublicPath: ''
+
+- Creation build for production
 
 ``` bash
 npm run build
@@ -49,4 +53,4 @@ https://cristinafsanz.github.io/vuejs-primeros-pasos/vue-playground/phone-format
 
 ## Código
 
-https://github.com/cristinafsanz/vuejs-primeros-pasos/tree/master/vue-playground/phone-formatting/vuelidate-example
+https://github.com/cristinafsanz/vuejs-primeros-pasos/tree/master/vue-playground/phone-formatting/vuelidate-example/src
