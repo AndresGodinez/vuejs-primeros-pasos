@@ -33,6 +33,14 @@ npm run build --report
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
+## GitHub Pages
+
+``` bash
+npm run build
+
+git add dist -f
+```
+
 ## Demo
 
 https://cristinafsanz.github.io/vuejs-primeros-pasos/vue-playground/phone-formatting/vuelidate-example/dist/
