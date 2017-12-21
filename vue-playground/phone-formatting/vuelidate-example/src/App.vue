@@ -25,7 +25,7 @@ export const phone = (value) => {
   if (typeof value === 'undefined' || value === null || value === '') {
     return true
   }
-  return /^[0-9+-]+$/.test(value)
+  return /^[0-9+-\\(\\) ]+$/.test(value)
 }
 
 export default {
