@@ -10,6 +10,8 @@
 
 - Demo original: https://jdonsan.github.io/charla-aprendiendo-vuejs/demo/dist/#/.
 
+- Grabación charla HTML5 Spain: https://www.youtube.com/watch?v=7ftXSVWOwcg.
+
 ### Guía de cómo empezar con vuejs a partir de la [charla](https://jdonsan.github.io/charla-aprendiendo-vuejs/slides/#slide=1) de [Jose Dongil](https://twitter.com/jdonsan). 
 
 - Creación de una SPA media: Con Vue y Router.
