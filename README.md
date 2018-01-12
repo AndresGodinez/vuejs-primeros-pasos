@@ -1,5 +1,7 @@
 # Tutorial para empezar con vuejs
 
+- [Vue Cheat sheet](http://codepop.com/Vue-Essentials-Cheat-Sheet.pdf)
+
 ## Notas Libro Vue
 
 - [Ejercicios: Demo, código y notas](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/README.md)
