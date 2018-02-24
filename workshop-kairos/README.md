@@ -219,7 +219,6 @@ Ej. pwa.stay-app.com
         ````
         props: ['character’] 
         ```
-        
-        - Sólo trabaja con la propiedad, es como la api que expone, lo que puede recibir.
+    - Sólo trabaja con la propiedad, es como la api que expone, lo que puede recibir.
 
 - Emit en el hijo y @ en el padre para disparar eventos que ejecuta método.

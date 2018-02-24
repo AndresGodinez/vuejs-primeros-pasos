@@ -1,5 +1,7 @@
 # Tutorial para empezar con vuejs
 
+- [Vue Cheat sheet](http://codepop.com/Vue-Essentials-Cheat-Sheet.pdf)
+
 ## Notas Libro Vue
 
 - [Ejercicios: Demo, código y notas](https://github.com/cristinafsanz/vuejs-primeros-pasos/blob/master/libro-vue/README.md)
@@ -9,6 +11,8 @@
 - Repositorio original: https://github.com/jdonsan/charla-aprendiendo-vuejs.
 
 - Demo original: https://jdonsan.github.io/charla-aprendiendo-vuejs/demo/dist/#/.
+
+- Grabación charla HTML5 Spain: https://www.youtube.com/watch?v=7ftXSVWOwcg.
 
 ### Guía de cómo empezar con vuejs a partir de la [charla](https://jdonsan.github.io/charla-aprendiendo-vuejs/slides/#slide=1) de [Jose Dongil](https://twitter.com/jdonsan). 
 
