@@ -403,3 +403,172 @@ state.establishment = establishmentData;
 #### Plugins
 
 - Ej. logger suscrito a las mutaciones.
+
+## Día 3
+
+- Con Webstorm (otro IDE) se puede extraer código para crear componente Vue.
+
+- Vue.component: registra un componente a nivel global para utilizarlo en cualquier sitio. Vue.extend para una aplicación concreta.
+
+### Refactoring
+
+- Ejemplo con repo vue-workshop-kairos
+
+- Tener una funcionalidad primero y luego refactorizar para mejorarlo
+
+- Ej. Home.vue: inicialmente todo en ese fichero. Luego separar el formulario y el listado.
+
+- API de un componente: props, eventos y slots.
+
+- ref en componente hijo para acceder con el padre con $refs. Mejor no usarlo mucho.
+
+#### Mixins
+
+- Para extraer funcionalidad para incluir en distintos componentes, parece un componente porque incluye atributos de un componente (computed, methods).
+
+- Usar utils para cuando no se usen en componentes.
+
+- Prevalece el data del componente respecto al de mixin al mergear.
+
+- Un método igual en el componente sobreescribirá el del mixin. Para todos los atributos pasa esto excepto para los hooks.
+
+- Todos los hooks mergeados se ejecutarán. Se ejecuta primero la del mixin.
+
+- Si hay métodos repetidos en componentes hay que sacarlo a un mixin.
+
+#### Directivas custom
+
+- No hace mucha falta (no como en Angular). En Vue se usan más los componentes.
+
+- Las propias sí se usan (v-model, v-bind, ...).
+
+- Para accesos de bajo nivel al DOM, ej. hacer algo al hacer focus.
+
+- Tienen unos hooks: bind, inserted, update...
+
+- Como atributo del componente se define directives. También a nivel global con Vue.directive. Se usará con v-focus.
+
+#### Función render
+
+- No suele hacer falta (con la template vale y el framework lo hará más eficazmente) pero hay casos de usos. 
+
+- En un componente puedes definir el atributo render. Crea los nodos que se insertarán en virtual DOM con createElement. 
+
+- Sigue siendo reactivo aunque se pise la función render.
+
+- Ejemplo si vas a pasar distintos h (h1, h2, h3...) a lo mejor es más sencillo con render que con template.
+
+#### Componentes funcionales
+
+- Con functional: true no tiene ni data propio y no tiene this. Para que sea parametrizable. Recibe a través de context.
+
+#### Plugins
+
+- Ej Vue.router
+
+- Se añade a nivel global no para un componente determinado.
+
+- Exponen el método install.
+
+- Para usarlo con Vue.use.
+
+#### Refactorización de datos
+
+- Añadir gestión de estado en algún momento del proyecto.
+
+** Intentar refactorizar constantemente y siempre que se pueda, no verlo como una etapa.
+
+### Testing
+
+- En repo de vue-workshop-kairos hay tests e2e y unitarios.
+
+- BDD: se consigue centrarse en lo pide negocio.
+
+- Test runner más usado es Jest.
+
+- En package.json (se ha generado con vue-cli:
+
+```
+"jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    },
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
+    },
+    "setupFiles": [
+      "<rootDir>/test/unit/setup"
+    ],
+    "mapCoverage": true,
+    "coverageDirectory": "<rootDir>/test/unit/coverage",
+    "collectCoverageFrom": [
+      "src/**/*.{js,vue}",
+      "!src/main.js",
+      "!src/router/index.js",
+      "!**/node_modules/**"
+    ]
+  },
+```
+
+- Se suelen meter en la carpeta test. Otra forma es ponerlo donde vive el componente (con fichero .test).
+
+#### Aserciones
+
+- Testear componente en Vue: lo más importante es $mount()
+
+- Se monta una instancia en el DOM virtual con $mount()
+
+- Ej. SearchCharacterForm.spec.js
+
+```
+expect(vm.$el.querySelector('input').getAttribute('placeholder'))
+    .toEqual('Character Name')
+```
+
+- Se pasarían datos emulados, no llamadas reales.
+
+- Lo ideal test unitario a nivel de componente. Integración cubriría más.
+
+- Con los e2e cubres más rápido más parte de la funcionalidad. Hay una funcionalidad en Chrome que te capture los clicks para generar el e2e.
+
+- Al ejecutar los tests se crea una carpeta coverage y se puede ver en el html generado la cobertura.
+
+```
+npm run test unit
+```
+
+- Mirar en package.json cómo se ejecuta el unit y el e2e.
+
+#### Tests e2e
+
+- En specs/test.js hay un ejemplo de uso
+
+#### Updates asíncronos
+
+- Se necesita el nextTick() para que se cierre el ciclo de update y poder evaluar el cambio del elemento en el virtual DOM.
+
+#### Vue test utils (beta)
+
+- Clonar https://github.com/vuejs/vue-test-utils-getting-started y hacer un npm install.
+
+- Componente counter.js. En test.js importa ese componente.
+
+### Recursos externos
+
+** En las slides
+
+- Vuetify: componentes con material design
+
+- Awesome vue
+
+- Curated vue: https://curated.vuejs.org
+
+
+
+
