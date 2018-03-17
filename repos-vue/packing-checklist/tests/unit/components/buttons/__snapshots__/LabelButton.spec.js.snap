@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LabelButton has the right DOM structure 1`] = `
+<button
+  class="btn-label"
+>
+  <img
+    alt="Icon"
+    height="14"
+    src="algo.svg"
+  />
+   Button
+</button>
+`;

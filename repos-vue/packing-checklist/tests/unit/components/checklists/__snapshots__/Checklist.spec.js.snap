@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checklist has the right DOM structure 1`] = `
+<article
+  class="checklist"
+>
+  <h1
+    class="checklist__title"
+  >
+    a checklist
+  </h1>
+   
+</article>
+`;

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChecklistItem matches snapshot 1`] = `
+<div
+  class="checklist-item"
+>
+  <input
+    class="checklist-item__checkbox"
+    type="checkbox"
+  />
+   
+  <label
+    class="checklist-item__title"
+  >
+    waka
+  </label>
+</div>
+`;

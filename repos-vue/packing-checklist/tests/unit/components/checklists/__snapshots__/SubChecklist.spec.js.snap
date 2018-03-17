@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SubChecklist has the right DOM structure 1`] = `
+<section
+  class="subchecklist"
+>
+  <h1
+    class="subchecklist__title"
+  >
+    waka
+  </h1>
+   
+  <ul />
+</section>
+`;
